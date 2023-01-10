@@ -1,0 +1,33 @@
+.web-dev-process {
+    width: auto;
+    height: 451px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto';
+    background-color: #8008FD;
+    padding: 0px 350px 0px 350px;
+}
+
+.header-text {
+    padding-top: 30px;
+}
+
+.header-text > h3 {
+    font-weight: 600;
+}
+
+.header-text > p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.steps-container > span {
+    text-decoration: line-through;
+    color: #DDBFF5;
+}
