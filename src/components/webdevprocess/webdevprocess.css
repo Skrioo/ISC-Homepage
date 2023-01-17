@@ -2,6 +2,7 @@
     width: auto;
     height: 451px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     font-family: 'Roboto';
@@ -24,10 +25,49 @@
 
 .steps-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 25px;
+    align-items: baseline;
 }
 
-.steps-container > span {
-    text-decoration: line-through;
-    color: #DDBFF5;
+.progress-bar {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.text-bar {
+    width: 190px;
+}
+
+.hidden-div {
+    visibility: hidden;
+    width: 150px;
+}
+
+.circle {
+    background-color: #D9D9D9;
+    max-width: fit-content;
+    border-radius: 50%;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #8008FD;
+    position: relative;
+    top: 0px;
+    z-index: 10;
+}
+
+.bar {
+    background-color: #DDBFF5;
+    width: 180px;
+    height: 3px;
+    position: relative;
+    left: 0;
+    top: 20px;
+    z-index: 1;
+}
+
