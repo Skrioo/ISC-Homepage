@@ -8,7 +8,7 @@ function Navbar() {
       {/*      <!-- LOGO --> */}
       <div className="logo">
         <img src={Logo} alt="logo.png" />
-        <h1>ISCloud</h1>
+        <h1 className="cloud">ISCloud</h1>
       </div>
       {/*      <!-- NAVIGATION MENU --> */}
 
