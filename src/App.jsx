@@ -24,8 +24,8 @@ export function App() {
       <Info />
       <WebDevProcess />
       <About />
-      <FAQ />
-      <PictureSlider />
+      {/* <FAQ /> */}
+      {/* <PictureSlider /> */}
       <Form />
       <Footer />
       <FooterBottom />

@@ -22,17 +22,17 @@ function Navbar() {
         </label>
         {/*        <!-- NAVIGATION MENUS --> */}
         <div className="menu">
-          <li>
+          {/* <li>
             <h2>About Us</h2>
-          </li>
+          </li> */}
 
-          <li>
+          {/* <li>
             <h2>Contact Us</h2>
-          </li>
+          </li> */}
 
-          <li>
+          {/* <li>
             <h2>EN/DE </h2>
-          </li>
+          </li> */}
         </div>
       </ul>
     </nav>
