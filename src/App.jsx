@@ -11,6 +11,7 @@ import Form from "./components/Form/Form";
 import Footer from "./components/Footer/Footer";
 import FooterBottom from "./components/FooterBottom/footerBottom";
 import PictureSlider from "./components/PictureSlider/PictureSlider";
+import GoToTop from "./components/GoToTop/GoToTop";
 
 export function App() {
   return (
@@ -29,6 +30,7 @@ export function App() {
       <Form />
       <Footer />
       <FooterBottom />
+      <GoToTop />
     </Router>
   );
 }

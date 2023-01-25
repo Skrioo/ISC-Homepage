@@ -61,3 +61,8 @@
   padding: 5px;
   border-bottom: #4d636c 1px solid;
 }
+
+.footer-section > div:nth-child(2n) {
+  border-left: 1px solid #8008FD;
+  border-right: 1px solid #8008FD;
+}
