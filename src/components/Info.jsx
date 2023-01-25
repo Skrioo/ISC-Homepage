@@ -64,7 +64,7 @@ export default function Home() {
             We have developed strong competency in delivering high-quality
             technical support services to businesses of different kinds. This
             allows us to be flexible and adjust to your specific requirements,
-            constraints, and priorities
+            constraints, and priorities.
           </p>
         </div>
         <div className="info-cards">

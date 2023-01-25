@@ -10,8 +10,8 @@ export default function Home() {
       <div className="mid-square-text">
         <h3>Reshaping Businesses Through</h3>
         <div className="words">
-          <span>Web Aplications</span>
-          <span>Mobile Aplications</span>
+          <span>Web Applications</span>
+          <span>Mobile Applications</span>
           <span>Quality Assurance</span>
           <span>Design</span>
           <span>Technical Support</span>

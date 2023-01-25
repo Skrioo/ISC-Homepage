@@ -10,7 +10,7 @@ export default function About() {
         </div>
         <div>
           <p>
-            CodeIT is a software and digital company based in Serbia and Bosnia
+            ISCloud is a software and digital company based in Serbia and Bosnia
             & Herzegowina focused on following the latest trends in development
             and design. We bring original ideas into the digital world, using
             our knowledge and expertise to develop, maintain and integrate any
