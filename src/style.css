@@ -56,14 +56,6 @@ p {
   letter-spacing: 0.01em;
 }
 
-.mid-square-text h3 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 25px;
-  line-height: 30px;
-}
-
 .mid-square-text p {
   font-family: "Roboto";
   font-style: normal;
@@ -120,3 +112,47 @@ p {
   width: 350px;
   max-height: 100%;
 }
+
+/* Homepage Words Animation */
+
+.words {
+  overflow: hidden;
+  height: 50px;
+  text-align: center;
+}
+.words > span {
+  display: block;
+  height: 100%;
+  padding-left: 10px;
+  color: #8008FD;
+  animation: spin_words 6s infinite;
+}
+
+@keyframes spin_words{
+  10%{
+      transform: translateY(-112%);
+  }
+  25%{
+      transform: translateY(-100%);
+  }
+  35%{
+      transform: translateY(-212%);
+  }
+  50%{
+      transform: translateY(-200%);
+  }
+  60%{
+      transform: translateY(-312%);
+  }
+  75%{
+      transform: translateY(-300%);
+  }
+  85%{
+      transform: translateY(-412%);
+  }
+  100%{
+      transform: translateY(-400%);
+  }
+}
+
+/*  */
