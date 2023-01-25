@@ -123,6 +123,12 @@ p {
 }
 
 /* Homepage Words Animation */
+.central-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
 
 .words {
   overflow: hidden;
