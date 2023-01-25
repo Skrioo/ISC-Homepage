@@ -9,13 +9,17 @@ export default function Home() {
       </div>
       <div className="mid-square-text">
         <h3>Reshaping Businesses Through</h3>
-        <div className="words">
-          <span>Web Aplications</span>
-          <span>Mobile Aplications</span>
-          <span>Quality Assurance</span>
-          <span>Design</span>
-          <span>Technical Support</span>
+        <div className="central-div">
+          <h3>We provide</h3>
+          <div className="words">
+            <span>Web Aplications</span>
+            <span>Mobile Aplications</span>
+            <span>Quality Assurance</span>
+            <span>Design</span>
+            <span>Technical Support</span>
+          </div>
         </div>
+
         <p>
           Edge out your competition with our unique and innovative digital
           product development solutions.
