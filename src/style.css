@@ -151,6 +151,32 @@ p {
   animation: spin_words 6s infinite;
 }
 
+@media (max-width: 980px) {
+  .mid-square-text {
+    width: 43.963rem;
+
+    margin-bottom: 43%;
+    padding: 3%;
+  }
+  .mid-square-text > p {
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mid-square-text {
+    width: 43.563rem;
+
+    margin-bottom: 42%;
+    padding: 3%;
+  }
+  .mid-square-text > p {
+    font-weight: 500;
+    font-size: 13px;
+  }
+}
+
 @keyframes spin_words {
   10% {
     transform: translateY(-112%);

@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes } from "react-router-dom";
-import { Route } from "react-router-dom";
+
 import Home from "./components/Home";
 // import Logobar from "./components/Logobar";
 import Info from "./components/Info/Info";
