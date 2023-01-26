@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Home() {
+export default function Info() {
   return (
-    <div className="info">
+    <div className="info-section">
       <div className="info-text">
         <h3>A Full Suit IT Consulting Firm For All Your Business Tech Needs</h3>
         <p>
