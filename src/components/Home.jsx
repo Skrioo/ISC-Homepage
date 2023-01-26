@@ -16,7 +16,7 @@ export default function Home() {
           <span>Design</span>
           <span>Technical Support</span>
         </div>
-        <p>
+        <p className="home-p">
           Edge out your competition with our unique and innovative digital
           product development solutions.
         </p>

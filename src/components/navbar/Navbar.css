@@ -37,6 +37,7 @@ li {
   font-style: normal;
   font-family: "Montserrat", sans-serif;
   margin-left: 9.438rem;
+  cursor: pointer;
 }
 
 .cloud {
@@ -128,32 +129,46 @@ input[type="checkbox"] {
   font-size: 24px;
 
   user-select: none;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 /* APPLYING MEDIA QUERIES */
 
+@media (max-width: 1000px) {
+  .logo {
+    margin-left: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .logo {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+
   .menu {
     display: none;
 
     position: absolute;
 
-    background-color: teal;
+    background-color: transparent;
 
     right: 0;
 
     left: 0;
 
     text-align: center;
-
+    cursor: pointer;
     padding: 16px 0;
+    width: 100%;
+    max-width: 768px;
   }
 
   .menu li:hover {
     display: inline-block;
 
-    background-color: #4c9e9e;
-
+    border: 1px solid white;
     transition: 0.3s ease;
   }
 
@@ -178,6 +193,6 @@ input[type="checkbox"] {
   }
 
   .dropdown li:hover {
-    background-color: #4c9e9e;
+    background-color: transparent;
   }
 }

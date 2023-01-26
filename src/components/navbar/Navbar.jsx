@@ -26,7 +26,7 @@ function Navbar() {
             <h2>About Us</h2>
           </li>{" "}
           <li>
-            <h2>Contact Us</h2>
+            <h2 id="contact">Contact Us</h2>
           </li>
           <li>
             <h2>EN/DE </h2>

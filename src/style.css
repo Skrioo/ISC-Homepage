@@ -147,6 +147,38 @@ p {
   animation: spin_words 6s infinite;
 }
 
+@media (max-width: 1000px) {
+  .mid-square-text {
+    margin-bottom: 46%;
+    width: 43.563rem;
+    height: 17.938rem;
+  }
+  .mid-square-text p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .menu > li > h2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mid-square-text {
+    margin-bottom: 46%;
+    width: 43.563rem;
+    height: 17.938rem;
+  }
+  .mid-square-text p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .menu > li > h2 {
+    font-size: 16px;
+  }
+}
+
 @keyframes spin_words {
   10% {
     transform: translateY(-112%);
