@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import Logo from "../images/img1.png";
 
-function Navbar() {
+function Navbar({ click }) {
   return (
     <nav className="navbar">
       {/*      <!-- LOGO --> */}
@@ -25,8 +25,8 @@ function Navbar() {
           <li>
             <h2>About Us</h2>
           </li>{" "}
-          <li>
-            <h2 id="contact">Contact Us</h2>
+          <li onClick={click}>
+            <h2 className="contact">Contact Us</h2>
           </li>
           <li>
             <h2>EN/DE </h2>
