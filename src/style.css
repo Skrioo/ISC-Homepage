@@ -84,8 +84,9 @@ p {
   padding: 25px;
 }
 
-.info {
-  height: 100%;
+.info-section {
+  width: 100%;
+  height: fit-content;
   max-height: 1016px;
   background-color: #232323;
 }
@@ -111,18 +112,20 @@ p {
 .info-card-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: center;
+  width: 100%;
+  height: auto;
   padding-bottom: 5%;
   gap: 40px;
 }
 
 .info-cards {
-  width: 350px;
   max-height: 100%;
+  flex: 0 1 500px;
 }
 
 /* Homepage Words Animation */
+
 .central-div {
   display: flex;
   align-items: center;
@@ -139,12 +142,39 @@ p {
   font-weight: 700;
   font-size: 36px;
 }
+
 .words > span {
   display: block;
   height: 100%;
   padding-left: 10px;
   color: #8008fd;
   animation: spin_words 8s infinite;
+}
+
+@media (max-width: 980px) {
+  .mid-square-text {
+    width: 43.963rem;
+
+    margin-bottom: 43%;
+    padding: 3%;
+  }
+  .mid-square-text > p {
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mid-square-text {
+    width: 43.563rem;
+
+    margin-bottom: 42%;
+    padding: 3%;
+  }
+  .mid-square-text > p {
+    font-weight: 500;
+    font-size: 13px;
+  }
 }
 
 @keyframes spin_words {
@@ -173,5 +203,3 @@ p {
     transform: translateY(-400%);
   }
 }
-
-/*  */
