@@ -27,7 +27,7 @@ export default function Home() {
             <span>Web Applications</span>
 
             <span>Mobile Applications</span>
-            <span>Design</span>
+            <span>Graphic Design</span>
             <span>Technical Support</span>
           </div>
           <p className="home-p">
