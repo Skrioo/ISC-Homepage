@@ -47,8 +47,8 @@ p {
 .mid-square-text {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 300;
-  font-size: 32px;
+  font-weight: 700;
+  font-size: 36px;
   line-height: 52px;
   width: 58.563rem;
   height: 19.938rem;
@@ -137,14 +137,14 @@ p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 36px;
 }
 .words > span {
   display: block;
   height: 100%;
   padding-left: 10px;
   color: #8008fd;
-  animation: spin_words 6s infinite;
+  animation: spin_words 8s infinite;
 }
 
 @keyframes spin_words {

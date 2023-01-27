@@ -1,59 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-*{
-    box-sizing: border-box;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .form-section {
-    width: auto;
-    height: 60rem;
-    background: url("../images/form-background.png") #232323 center no-repeat;
-    background-size: 75% 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: auto;
+  height: 60rem;
+  background: url("../images/form-background.png") #232323 center no-repeat;
+  background-size: 75% 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-container {
-    width: 26rem;
-    height: auto;
-    padding: 2rem;
-    background-color: #8008FD;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+  width: 26rem;
+  height: auto;
+  padding: 2rem;
+  background-color: #8008fd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
 .form-header {
-    padding: 50px 0px 50px 0px;
+  padding: 50px 0px 50px 0px;
 }
 
 .form-inputs {
-    width: 100%;
-    display: flex;
-    gap: 40px;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  outline: none;
 }
 
 .form-inputs > input {
-    width: 100%;
-    background: none;
-    border: none;
-    padding: 5px;
-    border-bottom: white 1px solid;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 5px;
+  border-bottom: white 1px solid;
+  outline: none;
 }
 
 .form-inputs > input::placeholder {
-    color: white;
-    font-family: 'Poppins', sans-serif;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .form-button {
-    width: 130px;
-    background: none;
-    border: 2px solid white;
-    padding: 10px;
-    border-radius: 30px;
+  width: 130px;
+  background: none;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 30px;
 }
