@@ -71,6 +71,7 @@ p {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
 }
 
 .logobar {
@@ -103,7 +104,7 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   font-family: "Roboto";
-  font-size: 32px;
+  font-size: 31px;
   line-height: 26px;
   color: white;
   margin-bottom: 120px;

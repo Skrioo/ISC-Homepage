@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import { useTranslation } from "react-i18next";
+
 import Navbar from "./navbar/Navbar";
 // import Logobar from "./logobar/Logobar";
 import Form from "./Form/Form";
@@ -9,6 +11,7 @@ import FooterBottom from "./FooterBottom/footerBottom";
 import GoToTop from "./GoToTop/GoToTop";
 import Info from "./Info/Info";
 export default function Home() {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const handleClick = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
@@ -21,19 +24,16 @@ export default function Home() {
           <Navbar click={handleClick} />
         </div>
         <div className="mid-square-text">
-          <h3>Reshaping Businesses Through</h3>
+          <h3>{t("We Provide")}</h3>
           <div className="words">
-            <span>Quality Assurance</span>
-            <span>Web Applications</span>
+            <span>{t("Quality Assurance")}</span>
+            <span>{t("Web Applications")}</span>
 
-            <span>Mobile Applications</span>
-            <span>Graphic Design</span>
-            <span>Technical Support</span>
+            <span>{t("Mobile Applications")}</span>
+            <span>{t("Graphic Design")}</span>
+            <span>{t("Technical Support")}</span>
           </div>
-          <p className="home-p">
-            Edge out your competition with our unique and innovative digital
-            product development solutions.
-          </p>
+          <p className="home-p">{t("Edge")}</p>
         </div>
       </div>
       <div className="home-rest">
