@@ -8,6 +8,8 @@ import { useTranslation } from "react-i18next";
 
 export default function Footer() {
   const { t } = useTranslation();
+  const { i18n } = useTranslation();
+
   return (
     <div className="footer-section">
       <div className="footer-container">
@@ -34,9 +36,9 @@ export default function Footer() {
         <h4>{t("LANGUAGES")}</h4>
         <div className="icon-container">
           <img src={globeicon} alt="globe-icon" />
-          <p>EN</p>
+          <button value='en' onClick={(e) => i18n.changeLanguage(e.target.value)}>EN</button>
           <img src={globeicon} alt="globe-icon" />
-          <p>DE</p>
+          <button value='de' onClick={(e) => i18n.changeLanguage(e.target.value)}>DE</button>
         </div>
       </div>
 

@@ -1,0 +1,19 @@
+.language-selector {
+    width: 100%;
+    height: auto;
+}
+
+.language-selector > select {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.language-selector > select > option {
+    background-color: transparent;
+    color: black;
+    outline: none;
+    
+}

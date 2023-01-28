@@ -68,3 +68,13 @@
   border-left: 1px solid #8008fd;
   border-right: 1px solid #8008fd;
 }
+
+.icon-container > button {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+}
+
+.icon-container > button:hover {
+  background-color: #8008fd;
+}
