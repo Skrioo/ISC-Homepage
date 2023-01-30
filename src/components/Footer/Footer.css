@@ -1,20 +1,22 @@
 .footer-section {
-  height: auto;
+  height: 100%;
+  width: 100%;
   background-color: #232323;
   border-top: 1px solid white;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 100px;
+  gap: 6.25rem;
 }
 
 .footer-container {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto;
-  padding: 40px 0px 40px 130px;
+  max-height: 100%;
+  padding: 2.5rem 0px 2.5rem 6.125rem;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .icon-container {
@@ -56,12 +58,17 @@
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  margin: auto;
   outline: none;
 }
 
 .footer-button {
   padding: 5px;
   border-bottom: #4d636c 1px solid;
+}
+
+.about-button {
+  cursor: pointer;
 }
 
 .footer-section > div:nth-child(2n) {
@@ -73,8 +80,21 @@
   background-color: transparent;
   border: none;
   font-size: 14px;
+  outline: none;
+  cursor: pointer;
 }
 
 .icon-container > button:hover {
   background-color: #8008fd;
+}
+
+.margin-0 {
+  margin: auto;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    padding: 0;
+    font-size: 14px;
+  }
 }

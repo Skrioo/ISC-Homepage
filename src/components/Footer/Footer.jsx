@@ -34,11 +34,21 @@ export default function Footer() {
         <p>+381 63 820 65 25</p> */}
         {/* <p>000-000-000</p> */}
         <h4>{t("LANGUAGES")}</h4>
-        <div className="icon-container">
+        <div className="icon-container margin-0">
           <img src={globeicon} alt="globe-icon" />
-          <button value='en' onClick={(e) => i18n.changeLanguage(e.target.value)}>EN</button>
+          <button
+            value="en"
+            onClick={(e) => i18n.changeLanguage(e.target.value)}
+          >
+            EN
+          </button>
           <img src={globeicon} alt="globe-icon" />
-          <button value='de' onClick={(e) => i18n.changeLanguage(e.target.value)}>DE</button>
+          <button
+            value="de"
+            onClick={(e) => i18n.changeLanguage(e.target.value)}
+          >
+            DE
+          </button>
         </div>
       </div>
 

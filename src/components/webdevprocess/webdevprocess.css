@@ -1,6 +1,7 @@
 .web-dev-process {
-  width: auto;
-  height: 451px;
+  width: 100%;
+  height: 28.188rem;
+  max-height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -6,14 +6,12 @@ export default function About() {
   const { t } = useTranslation();
   return (
     <div className="about-us-container">
-      <div className="text-container">
-        <div className="header-text">
-          <h1>{t("About Us")}</h1>
-        </div>
-        <div>
-          <p>{t("ISCloud is a software")}</p>
-          {/* <button className="about-button">READ MORE +</button> */}
-        </div>
+      <div className="header-text">
+        <h1>{t("About Us")}</h1>
+      </div>
+      <div className="about-text">
+        <p>{t("ISCloud is a software")}</p>
+        {/* <button className="about-button">READ MORE +</button> */}
       </div>
     </div>
   );
