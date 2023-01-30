@@ -85,7 +85,8 @@
 }
 
 .icon-container > button:hover {
-  background-color: #8008fd;
+  color: #4d636c;
+  cursor: pointer;
 }
 
 .margin-0 {
