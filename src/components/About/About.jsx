@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import { useTranslation } from "react-i18next";
 
-export default function About() {
+export default function About({}) {
   const { t } = useTranslation();
   return (
     <div className="about-us-container">

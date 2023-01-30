@@ -30,8 +30,8 @@ export default function Footer() {
       </div>
 
       <div className="footer-container">
-        {/* <h4>PHONE</h4>
-        <p>+381 63 820 65 25</p> */}
+        <h4>PHONE</h4>
+        <p>+381 63 820 65 25</p>
         {/* <p>000-000-000</p> */}
         <h4>{t("LANGUAGES")}</h4>
         <div className="icon-container margin-0">

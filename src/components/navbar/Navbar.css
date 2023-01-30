@@ -13,7 +13,7 @@ li {
 
   align-items: center;
 
-  justify-content: flex-end;
+  justify-content: space-between;
   font-size: 1.25rem !important;
   font-family: "Montserrat";
   font-style: normal !important;
@@ -24,6 +24,8 @@ li {
 
 .nav-links a {
   color: #fff;
+  position: absolute;
+  right: -3%;
 }
 
 /* LOGO */
@@ -49,12 +51,12 @@ li {
 
 .contact {
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .menu {
   display: flex;
   align-items: baseline;
-  border: 1px solid red;
 
   gap: 1em;
   font-style: normal;
@@ -136,7 +138,7 @@ input[type="checkbox"] {
 
   user-select: none;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 158px;
 }
 
 /* APPLYING MEDIA QUERIES */
@@ -160,9 +162,8 @@ input[type="checkbox"] {
 
     background-color: transparent;
 
-    right: 0;
-
-    left: 0;
+    right: 50%;
+    left: -94%;
 
     text-align: center;
     cursor: pointer;

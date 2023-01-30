@@ -18,11 +18,15 @@ export default function Home() {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleAbout = () => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <div className="homepage">
         <div className="homepage-navbar">
-          <Navbar click={handleClick} />
+          <Navbar click={handleClick} clickAbout={handleAbout} />
         </div>
         <div className="mid-square-text">
           <h3>{t("We Provide")}</h3>
@@ -50,10 +54,10 @@ export default function Home() {
           {" "}
           <WebDevProcess />
         </>
-        <>
+        <div className="about" ref={ref}>
           {" "}
           <About />
-        </>
+        </div>
         <div className="form" ref={ref}>
           <Form />
         </div>

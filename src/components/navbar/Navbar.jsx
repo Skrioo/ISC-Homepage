@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Navbar.css";
 import Logo from "../images/img1.png";
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import CustomDropdown from "../CustomDropdown/CustomDropdown";
 
-function Navbar({ click }) {
+function Navbar({ click, handleAbout }) {
   const { t } = useTranslation();
+
   return (
     <nav className="navbar">
       {/*      <!-- LOGO --> */}
@@ -26,13 +27,16 @@ function Navbar({ click }) {
         </label>
         {/*        <!-- NAVIGATION MENUS --> */}
         <div className="menu">
-          <li>{/* <h2>About Us</h2> */}</li>{" "}
+          <li className="contact" onClick={click}>
+            <h2>About Us</h2>{" "}
+          </li>
+
           <li onClick={click}>
             <h2 className="contact">{t("Contact Us")}</h2>
           </li>
         </div>
       </ul>
-      <CustomDropdown/>
+      <CustomDropdown />
     </nav>
   );
 }
