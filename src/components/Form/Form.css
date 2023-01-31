@@ -25,6 +25,8 @@
   align-items: center;
   gap: 40px;
   border-radius: 10px;
+
+  z-index: 1;
 }
 
 .form-container h1 {
