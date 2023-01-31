@@ -74,9 +74,10 @@
 .footer-section > div:nth-child(2n) {
   border-left: 1px solid #8008fd;
   border-right: 1px solid #8008fd;
+  padding: 2.5%;
 }
 
-.icon-container > button {
+.icon-container div > button {
   background-color: transparent;
   border: none;
   font-size: 14px;
@@ -84,7 +85,7 @@
   cursor: pointer;
 }
 
-.icon-container > button:hover {
+.icon-container div > button:hover {
   color: #4d636c;
   cursor: pointer;
 }

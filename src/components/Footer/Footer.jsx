@@ -6,7 +6,7 @@ import igicon from "../images/ig-icon.png";
 import inicon from "../images/in-icon.png";
 import { useTranslation } from "react-i18next";
 
-export default function Footer() {
+export default function Footer({ callback }) {
   const { t } = useTranslation();
   const { i18n } = useTranslation();
 
@@ -36,19 +36,27 @@ export default function Footer() {
         <h4>{t("LANGUAGES")}</h4>
         <div className="icon-container margin-0">
           <img src={globeicon} alt="globe-icon" />
-          <button
-            value="en"
-            onClick={(e) => i18n.changeLanguage(e.target.value)}
-          >
-            EN
-          </button>
+
+          <div onClick={() => callback('English')}>
+              <button
+                value="en"
+                onClick={(e) => i18n.changeLanguage(e.target.value)}
+              >
+                EN
+              </button>
+          </div>
+
           <img src={globeicon} alt="globe-icon" />
-          <button
-            value="de"
-            onClick={(e) => i18n.changeLanguage(e.target.value)}
-          >
-            DE
-          </button>
+
+          <div onClick={(e) => callback('German')}>
+              <button
+                value="de"
+                onClick={(e) => i18n.changeLanguage(e.target.value)}
+              >
+                DE
+              </button>
+          </div>
+
         </div>
       </div>
 

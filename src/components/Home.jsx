@@ -71,7 +71,7 @@ export default function Home() {
         </div>
         <>
           {" "}
-          <Footer />
+          <Footer callback={setSelectedOption}/>
         </>
         <>
           {" "}
