@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import CustomDropdown from "../CustomDropdown/CustomDropdown";
 
-function Navbar({ click, handleAbout }) {
+function Navbar({ click, handleAbout, selectedOption, handleOptionClick, optionsContainerRef }) {
   const { t } = useTranslation();
 
   return (
@@ -36,7 +36,7 @@ function Navbar({ click, handleAbout }) {
           </li>
         </div>
       </ul>
-      <CustomDropdown />
+      <CustomDropdown selectedOption={selectedOption} handleOptionClick={handleOptionClick} optionsContainerRef={optionsContainerRef}/>
     </nav>
   );
 }

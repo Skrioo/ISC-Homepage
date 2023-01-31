@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import Navbar from "./navbar/Navbar";
@@ -22,11 +22,19 @@ export default function Home() {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const [selectedOption, setSelectedOption] = useState("English");
+  const optionsContainerRef = useRef(null);
+
+  function handleOptionClick(option) {
+    setSelectedOption(option);
+    optionsContainerRef.current?.classList.remove("active");
+  }
+
   return (
     <>
       <div className="homepage">
         <div className="homepage-navbar">
-          <Navbar click={handleClick} clickAbout={handleAbout} />
+          <Navbar click={handleClick} clickAbout={handleAbout} selectedOption={selectedOption} handleOptionClick={handleOptionClick} optionsContainerRef={optionsContainerRef}/>
         </div>
         <div className="mid-square-text">
           <h3>{t("We Provide")}</h3>

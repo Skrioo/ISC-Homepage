@@ -1,16 +1,9 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import "./CustomDropdown.css";
 
-function CustomDropdown() {
-  const [selectedOption, setSelectedOption] = useState("English");
-  const optionsContainerRef = useRef(null);
+function CustomDropdown({handleOptionClick, selectedOption, optionsContainerRef }) {
   const { i18n } = useTranslation();
-
-  function handleOptionClick(option) {
-    setSelectedOption(option);
-    optionsContainerRef.current.classList.remove("active");
-  }
 
   return (
     <div className='container'>
@@ -27,6 +20,7 @@ function CustomDropdown() {
                   />
                   <label htmlFor="english">English</label>
               </div>
+
               <div className='option' onClick={() => handleOptionClick("German")} >
                   <input
                     type="radio"
@@ -36,11 +30,12 @@ function CustomDropdown() {
                     value='de'
                     onChange={(e) => i18n.changeLanguage(e.target.value)}
                   />
-                  <label htmlFor="german">German </label>
+                  <label htmlFor="german">German</label>
               </div>
           </div>
-          <div className='selected' onClick={() => optionsContainerRef.current.classList.toggle("active")} onChange={(e) => i18n.changeLanguage(e.target.value)} >
-              {selectedOption}
+          <div className='selected' 
+               onClick={() => optionsContainerRef.current.classList.toggle("active")} >
+             {selectedOption}
           </div>
       </div>
     </div>
