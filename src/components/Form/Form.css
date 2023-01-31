@@ -9,8 +9,7 @@
 .form-section {
   width: auto;
   height: 60rem;
-  background: url("../images/form-background.png") #232323 center no-repeat;
-  background-size: 75% 75%;
+  background: #232323 center no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +25,8 @@
   align-items: center;
   gap: 40px;
   border-radius: 10px;
+
+  z-index: 1;
 }
 
 .form-container h1 {
@@ -68,4 +69,155 @@
   border: 2px solid white;
   padding: 10px;
   border-radius: 30px;
+}
+
+/* ANIMATION */
+
+.background-animation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 100px;
+
+}
+
+.vector:nth-child(1),
+.vector:nth-child(2),
+.vector:nth-child(3),
+.vector:nth-child(4),
+.vector:nth-child(5),
+.vector:nth-child(6),
+.vector:nth-child(7),
+.vector:nth-child(8),
+.vector:nth-child(9),
+.vector:nth-child(10),
+.vector:nth-child(11),
+.vector:nth-child(12) {
+  will-change: transform;
+  transition: transform 850ms;
+}
+
+.background-animation:hover .vector:nth-child(1),
+.background-animation:focus {
+  transform: translate(-150px, 10px);
+}
+
+.background-animation:hover .vector:nth-child(2),
+.background-animation:focus {
+  transform: translate(-150px, -50px);
+}
+
+.background-animation:hover .vector:nth-child(3),
+.background-animation:focus {
+  transform: translate(-150px, 30px);
+}
+
+.background-animation:hover .vector:nth-child(4),
+.background-animation:focus {
+  transform: translate(-100px, -50px);
+}
+
+.background-animation:hover .vector:nth-child(5),
+.background-animation:focus {
+  transform: translate(-150px, 50px);
+}
+
+.background-animation:hover .vector:nth-child(6),
+.background-animation:focus {
+  transform: translate(150px, -100px);
+}
+
+.background-animation:hover .vector:nth-child(7),
+.background-animation:focus {
+  transform: translate(100px, 150px);
+}
+
+.background-animation:hover .vector:nth-child(8),
+.background-animation:focus {
+  transform: translate(-100px, 150px);
+}
+
+.background-animation:hover .vector:nth-child(9),
+.background-animation:focus {
+  transform: translate(50px, 100px);
+}
+
+.background-animation:hover .vector:nth-child(10),
+.background-animation:focus {
+  transform: translate(-350px, 40px);
+}
+
+.background-animation:hover .vector:nth-child(11),
+.background-animation:focus {
+  transform: translate(20px, 30px);
+}
+
+.background-animation:hover .vector:nth-child(12),
+.background-animation:focus {
+  transform: translate(-30px, 30px);
+}
+
+.america {
+  position: relative;
+  right: 200px;
+}
+
+.america-island1 {
+  position: relative;
+  bottom: 280px;
+  left: 100px;
+}
+.america-island2 {
+  position: relative;
+  bottom: 255px;
+  left: 50px;
+}
+.america-island3 {
+  position: relative;
+  bottom: 280px;
+  left: 50px;
+}
+.antartic {
+  position: relative;
+  bottom: 220px;
+  left: 340px;
+}
+.eurasia {
+  position: relative;
+  right: 100px;
+}
+
+.japan {
+  position: relative;
+  right: 190px;
+  bottom: 50px;
+}
+
+.australia {
+  position: relative;
+  right: 270px;
+  top: 200px;
+}
+.australia1 {
+  position: relative;
+  left: 440px;
+  bottom: 220px;
+}
+.australia2 {
+  position: relative;
+  left: 370px;
+  bottom: 50px;
+}
+.newzealand1 {
+  position: relative;
+  left: 450px;
+  bottom: 50px;
+
+}
+.newzealand2 {
+  position: relative;
+  left: 380px;
+  bottom: 20px;
 }

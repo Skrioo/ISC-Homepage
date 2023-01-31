@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./Navbar.css";
 import Logo from "../images/img1.png";
 import { useTranslation } from "react-i18next";
