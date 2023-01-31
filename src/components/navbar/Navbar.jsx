@@ -5,7 +5,12 @@ import { useTranslation } from "react-i18next";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import CustomDropdown from "../CustomDropdown/CustomDropdown";
 
-function Navbar({ click, handleAbout, selectedOption, handleOptionClick, optionsContainerRef }) {
+function Navbar({
+  click,
+  selectedOption,
+  handleOptionClick,
+  optionsContainerRef,
+}) {
   const { t } = useTranslation();
 
   return (
@@ -20,23 +25,23 @@ function Navbar({ click, handleAbout, selectedOption, handleOptionClick, options
       <ul className="nav-links">
         {/*        <!-- USING CHECKBOX HACK --> */}
 
-        <input type="checkbox" id="checkbox_toggle" />
+        {/* <input type="checkbox" id="checkbox_toggle" />
 
         <label for="checkbox_toggle" className="hamburger">
           &#9776;
-        </label>
+        </label> */}
         {/*        <!-- NAVIGATION MENUS --> */}
         <div className="menu">
-          <li className="contact" onClick={click}>
-            <h2>About Us</h2>{" "}
-          </li>
-
           <li onClick={click}>
             <h2 className="contact">{t("Contact Us")}</h2>
           </li>
         </div>
+        <CustomDropdown
+          selectedOption={selectedOption}
+          handleOptionClick={handleOptionClick}
+          optionsContainerRef={optionsContainerRef}
+        />
       </ul>
-      <CustomDropdown selectedOption={selectedOption} handleOptionClick={handleOptionClick} optionsContainerRef={optionsContainerRef}/>
     </nav>
   );
 }

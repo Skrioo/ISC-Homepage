@@ -21,11 +21,18 @@ li {
   width: 100%;
   height: 7.313rem;
 }
+.nav-links {
+  display: flex;
+
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
 
 .nav-links a {
   color: #fff;
-  position: absolute;
-  right: -3%;
+  /* position: absolute;
+  right: -3%; */
 }
 
 /* LOGO */
@@ -51,7 +58,7 @@ li {
 
 .contact {
   cursor: pointer;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .menu {
@@ -138,7 +145,7 @@ input[type="checkbox"] {
 
   user-select: none;
   cursor: pointer;
-  margin-right: 158px;
+  margin-right: 10px;
 }
 
 /* APPLYING MEDIA QUERIES */
@@ -156,14 +163,9 @@ input[type="checkbox"] {
   }
 
   .menu {
-    display: none;
-
-    position: absolute;
+    display: inline-block;
 
     background-color: transparent;
-
-    right: 50%;
-    left: -94%;
 
     text-align: center;
     cursor: pointer;
@@ -194,7 +196,7 @@ input[type="checkbox"] {
   .dropdown {
     left: 50%;
 
-    top: 30px;
+    top: 100px;
 
     transform: translateX(35%);
   }
@@ -202,4 +204,45 @@ input[type="checkbox"] {
   .dropdown li:hover {
     background-color: transparent;
   }
+}
+
+@media (max-width: 672px) {
+  .logo {
+    margin-left: 2rem;
+  }
+
+  .logo > img {
+    height: 50px;
+  }
+
+  .cloud {
+    font-size: 1.25rem;
+  }
+
+  .contact {
+    font-size: 16px;
+    width: 126%;
+  }
+}
+
+@media (max-width: 428px) {
+  .logo {
+    margin-left: 2rem;
+  }
+
+  .logo > img {
+    height: 50px;
+  }
+
+  .cloud {
+    font-size: 1.25rem;
+  }
+
+  .contact {
+    font-size: 13px;
+    width: 126%;
+  }
+}
+
+@media (max-width: 375px) {
 }

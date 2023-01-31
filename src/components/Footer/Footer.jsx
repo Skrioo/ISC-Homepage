@@ -58,11 +58,11 @@ export default function Footer() {
         <p>11120 Belgrade</p>
         <p>Serbia</p>
         <p>info@is-cloud.net</p>
-        {/* <div className="icon-container">
+        <div className="icon-container">
           <img src={igicon} alt="ig-icon" />
           <img src={fbicon} alt="fb-icon" />
           <img src={inicon} alt="in-icon" />
-        </div> */}
+        </div>
       </div>
     </div>
   );
