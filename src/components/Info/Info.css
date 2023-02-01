@@ -5,9 +5,19 @@
   background-color: #232323;
 }
 
-.info-text h3 {
+.info-text > h3 {
+  font-family: "Roboto";
+
   margin-bottom: 20px;
   font-weight: 600;
+  font-size: 31px;
+  line-height: 30px;
+}
+
+.info-text > p {
+  font-family: "Roboto";
+  font-size: 1.125rem;
+  line-height: 26px;
 }
 
 .info-text {
@@ -42,8 +52,64 @@
 
 .info-cards h3 {
   margin-bottom: 8px;
+  font-family: "Roboto";
+  font-size: 1rem;
 }
 
 .info-cards > img {
   margin: 0 0 10px 0;
+}
+
+@media (max-width: 768px) {
+  .info-text {
+    padding: 5% 5% 0 5%;
+    margin-bottom: 61px;
+  }
+
+  .info-text > h3 {
+    font-size: 1.2rem;
+    width: 500px;
+  }
+  .info-text > p {
+    width: 500px;
+    font-size: 1rem;
+  }
+
+  .info-card-container h3 {
+    font-size: 1rem;
+  }
+
+  .info-card-container p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .info-text {
+    padding: 2.5% 2.5% 0 2.5%;
+    margin-bottom: 61px;
+  }
+  .info-cards {
+    padding: 3%;
+  }
+}
+
+@media (max-width: 414px) {
+  .info-text {
+    padding: 2.5% 2.5% 0 2.5%;
+    margin-bottom: 61px;
+  }
+  .info-cards {
+    padding: 3%;
+  }
+}
+
+@media (max-width: 390px) {
+  .info-text {
+    padding: 2.5% 2.5% 0 2.5%;
+    margin-bottom: 61px;
+  }
+  .info-cards {
+    padding: 3%;
+  }
 }
