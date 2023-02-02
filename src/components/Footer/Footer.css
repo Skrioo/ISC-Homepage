@@ -137,3 +137,32 @@ footer {
     }
   }
 }
+
+@media (max-width: 600px) {
+  .footer-section {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+  }
+
+  .footer-container-left {
+    border-right: none;
+    align-items: first baseline;
+  }
+
+  .subscribe > h2 {
+    font-size: 13px;
+    margin-left: 19%;
+    width: 100%;
+  }
+  .footer-input > input {
+    font-size: 8px;
+  }
+
+  .footer-input {
+    width: 189%;
+  }
+
+  .about-button {
+    font-size: 9px;
+  }
+}

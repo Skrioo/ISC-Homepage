@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import Navbar from "./navbar/Navbar";
-// import Logobar from "./logobar/Logobar";
+import Logobar from "./logobar/Logobar";
 import Form from "./Form/Form";
 import WebDevProcess from "./webdevprocess/Webdevproces";
 import About from "./About/About";
@@ -51,13 +51,12 @@ export default function Home() {
         </div>
       </div>
       <div className="home-rest">
+        <div className="logobar">
+          <Logobar />
+        </div>
         <>
           <Info />
         </>
-
-        {/* <div className="logobar">
-          <Logobar />
-        </div> */}
 
         <> {/* <WebDevProcess /> */}</>
         <div className="about" ref={ref}>

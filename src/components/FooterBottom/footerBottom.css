@@ -10,7 +10,7 @@
 }
 
 @media (max-width: 414px) {
-  .footer-bottom {
+  .footer-bottom > p {
     font-size: 14px;
   }
 }
