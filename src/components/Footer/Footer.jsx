@@ -11,67 +11,43 @@ export default function Footer({ callback }) {
   const { i18n } = useTranslation();
 
   return (
-    <div className="footer-section">
-      <div className="footer-container">
-        <h2>{t("SUBSCRIBE NOW")}</h2>
-        <div className="footer-input-button">
-          <input
-            type="text"
-            name="sub"
-            id="submit"
-            placeholder={t("Enter your email")}
-          />
-          <div className="footer-button">
+    <footer>
+      <div className="footer-section">
+        <div className="footer-container-left">
+          <div className="subscribe">
+            <h2>{t("SUBSCRIBE NOW")}</h2>
+          </div>
+          <div className="footer-input">
+            <input
+              type="text"
+              name="sub"
+              id="submit"
+              placeholder={t("Enter your email")}
+            />
             <button type="submit" className="about-button">
               {t("SUBMIT")}
             </button>
           </div>
         </div>
-      </div>
 
-      <div className="footer-container">
-        <h4>PHONE</h4>
-        <p>+381 63 820 65 25</p>
-        {/* <p>000-000-000</p> */}
-        <h4>{t("LANGUAGES")}</h4>
-        <div className="icon-container margin-0">
-          <img src={globeicon} alt="globe-icon" />
+        <div className="footer-container-right">
+          <div className="office-container">
+            <h4>{t("BELGRADE OFFICE")}</h4>
 
-          <div onClick={() => callback('English')}>
-              <button
-                value="en"
-                onClick={(e) => i18n.changeLanguage(e.target.value)}
-              >
-                EN
-              </button>
+            <div className="office-info">
+              <h6>Cvijićeva 40</h6>
+              <h6>11120 Belgrade</h6>
+              <h6>Serbia</h6>
+              <h6>info@is-cloud.net</h6>
+            </div>
+            <div className="icon-container">
+              <img src={igicon} alt="ig-icon" />
+              <img src={fbicon} alt="fb-icon" />
+              <img src={inicon} alt="in-icon" />
+            </div>
           </div>
-
-          <img src={globeicon} alt="globe-icon" />
-
-          <div onClick={(e) => callback('German')}>
-              <button
-                value="de"
-                onClick={(e) => i18n.changeLanguage(e.target.value)}
-              >
-                DE
-              </button>
-          </div>
-
         </div>
       </div>
-
-      <div className="footer-container">
-        <h4>{t("BELGRADE OFFICE")}</h4>
-        <p>Cvijićeva 40</p>
-        <p>11120 Belgrade</p>
-        <p>Serbia</p>
-        <p>info@is-cloud.net</p>
-        <div className="icon-container">
-          <img src={igicon} alt="ig-icon" />
-          <img src={fbicon} alt="fb-icon" />
-          <img src={inicon} alt="in-icon" />
-        </div>
-      </div>
-    </div>
+    </footer>
   );
 }

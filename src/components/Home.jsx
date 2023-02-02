@@ -59,10 +59,7 @@ export default function Home() {
           <Logobar />
         </div> */}
 
-        <>
-          {" "}
-          <WebDevProcess />
-        </>
+        <> {/* <WebDevProcess /> */}</>
         <div className="about" ref={ref}>
           {" "}
           <About />
@@ -72,7 +69,7 @@ export default function Home() {
         </div>
         <>
           {" "}
-          <Footer callback={setSelectedOption}/>
+          <Footer callback={setSelectedOption} />
         </>
         <>
           {" "}

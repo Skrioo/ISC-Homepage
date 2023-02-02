@@ -18,23 +18,42 @@ export default function Form() {
   const { t } = useTranslation();
   return (
     <div className="form-section">
-     <div className="background-animation">
-              <img src={antartic} alt="Antartic" className="antartic vector"/>
-              <img src={americaisland1} alt="america-island1" className="america-island1 vector"/>
-              <img src={americaisland2} alt="america-island2" className="america-island2 vector"/>
-              <img src={americaisland3} alt="america-island3" className="america-island3 vector"/>
-              <img src={america} alt="America" className="america vector"/>
-              <img src={eurasia} alt="Eurasia-Africa" className="eurasia vector"/>
-              <img src={japan} alt="japan" className="japan vector"/>
-              <img src={australia} alt="australia" className="australia vector"/>
-              <img src={australia1} alt="australia1" className="australia1 vector"/>
-              <img src={australia2} alt="australia2" className="australia2 vector"/>
-              <img src={newzealand1} alt="newzealand1" className="newzealand1 vector"/>
-              <img src={newzealand2} alt="newzealand2" className="newzealand2 vector"/>
-        </div>
+      <div className="background-animation">
+        <img src={antartic} alt="Antartic" className="antartic vector" />
+        <img
+          src={americaisland1}
+          alt="america-island1"
+          className="america-island1 vector"
+        />
+        <img
+          src={americaisland2}
+          alt="america-island2"
+          className="america-island2 vector"
+        />
+        <img
+          src={americaisland3}
+          alt="america-island3"
+          className="america-island3 vector"
+        />
+        <img src={america} alt="America" className="america vector" />
+        <img src={eurasia} alt="Eurasia-Africa" className="eurasia vector" />
+        <img src={japan} alt="japan" className="japan vector" />
+        <img src={australia} alt="australia" className="australia vector" />
+        <img src={australia1} alt="australia1" className="australia1 vector" />
+        <img src={australia2} alt="australia2" className="australia2 vector" />
+        <img
+          src={newzealand1}
+          alt="newzealand1"
+          className="newzealand1 vector"
+        />
+        <img
+          src={newzealand2}
+          alt="newzealand2"
+          className="newzealand2 vector"
+        />
+      </div>
 
       <div className="form-container">
-   
         <div className="form-header">
           <h1>{t("Request a Call Back")}</h1>
         </div>

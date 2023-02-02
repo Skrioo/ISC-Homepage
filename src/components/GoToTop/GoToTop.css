@@ -1,22 +1,29 @@
 #go-to-top {
-    position: fixed;
-    bottom: 100px;
-    right: 10px;
-    height: 30px;
-    width: 30px;
-    display: block;
-    place-items: center;
-    border-radius: 50%;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-  }
+  max-width: 100%;
+  position: fixed;
+  bottom: 100px;
+  right: 1%;
+  height: 30px;
+  width: 30px;
+  display: block;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
 
 #go-to-top-value {
-    display: block;
-    height: calc(100% - 7px);
-    width: calc(100% - 7px);
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
+  display: block;
+  height: calc(100% - 1%);
+  width: calc(100% - 1%);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 414px) {
+  #go-to-top {
+    right: 1%;
   }
+}

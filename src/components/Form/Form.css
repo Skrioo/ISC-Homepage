@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 .form-section {
   width: auto;
   height: 60rem;
@@ -80,7 +75,6 @@
   align-items: center;
   position: absolute;
   left: 100px;
-
 }
 
 .vector:nth-child(1),
@@ -214,10 +208,27 @@
   position: relative;
   left: 450px;
   bottom: 50px;
-
 }
 .newzealand2 {
   position: relative;
   left: 380px;
   bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .background-animation {
+    display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  .background-animation {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .background-animation {
+    display: none;
+  }
 }
