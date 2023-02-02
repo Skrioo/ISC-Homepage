@@ -64,6 +64,7 @@
   border: 2px solid white;
   padding: 10px;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 /* ANIMATION */
@@ -224,6 +225,21 @@
 @media (max-width: 414px) {
   .background-animation {
     display: none;
+  }
+
+  .form-section {
+    width: 100%;
+    height: 46rem;
+  }
+
+  .form-container {
+    width: 19rem;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .form-container h1 {
+    font-size: 19px;
   }
 }
 

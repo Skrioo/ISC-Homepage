@@ -88,4 +88,52 @@ footer {
   height: 18px;
   width: auto;
   margin: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .footer-input {
+    width: 80%;
+  }
+
+  @media (max-width: 812px) {
+    .footer-input {
+      width: 72%;
+    }
+  }
+
+  @media (max-width: 596px) {
+    .footer-input {
+      width: 96%;
+    }
+  }
+
+  @media (max-width: 414px) {
+    .footer-section {
+      align-items: flex-start;
+      flex-direction: column-reverse;
+    }
+
+    .footer-container-left {
+      border-right: none;
+      align-items: first baseline;
+    }
+
+    .subscribe > h2 {
+      font-size: 13px;
+      margin-left: 19%;
+      width: 100%;
+    }
+    .footer-input > input {
+      font-size: 8px;
+    }
+
+    .footer-input {
+      width: 189%;
+    }
+
+    .about-button {
+      font-size: 9px;
+    }
+  }
 }
