@@ -39,7 +39,7 @@ export default function Form() {
         <img src={eurasia} alt="Eurasia-Africa" className="eurasia vector" />
         <img src={japan} alt="japan" className="japan vector" />
         <img src={australia} alt="australia" className="australia vector" />
-        <img src={australia1} alt="australia1" className="australia1 vector" />
+        {/* <img src={australia1} alt="australia1" className="australia1 vector" />
         <img src={australia2} alt="australia2" className="australia2 vector" />
         <img
           src={newzealand1}
@@ -50,7 +50,7 @@ export default function Form() {
           src={newzealand2}
           alt="newzealand2"
           className="newzealand2 vector"
-        />
+        /> */}
       </div>
 
       <div className="form-container">

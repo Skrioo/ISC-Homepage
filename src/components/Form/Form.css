@@ -71,11 +71,10 @@
 
 .background-animation {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 100px;
 }
 
 .vector:nth-child(1),
