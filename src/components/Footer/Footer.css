@@ -77,6 +77,10 @@
   cursor: pointer;
 }
 
+.about-button:hover {
+  background-color: #8008fd;
+}
+
 footer {
   padding: 2%;
   background-color: #232323;
