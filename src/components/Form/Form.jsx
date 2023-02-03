@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./Form.css";
 import { useTranslation } from "react-i18next";
+import { showMessage } from "../../services/Alerts";
+
 import america from "./vectors/America.png";
 import eurasia from "./vectors/Eurasia-Africa.png";
 import antartic from "./vectors/Antartic.png";
@@ -15,6 +18,36 @@ import newzealand1 from "./vectors/NewZealand1.png";
 import newzealand2 from "./vectors/NewZealand2.png";
 
 export default function Form() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_dycfhht",
+        "template_8hlqog5",
+        form.current,
+        "CPNttltCH3VdQN8BG"
+      )
+      .then(
+        (result) => {
+          if (result === "") {
+            showMessage(
+              "Callback successfully created.",
+              "success",
+              "center",
+              1000
+            );
+          } else {
+            showMessage("Title or content are empty", "error", "center", 3000);
+          }
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  };
+
   const { t } = useTranslation();
   return (
     <div className="form-section">
@@ -57,15 +90,13 @@ export default function Form() {
         <div className="form-header">
           <h1>{t("Request a Call Back")}</h1>
         </div>
-        <div className="form-inputs">
-          <input type="text" placeholder={t("Full Name")} />
-          <input type="text" name="" id="" placeholder={t("Phone Number")} />
-          <input type="text" name="" id="" placeholder={t("Email")} />
-          <input type="text" name="" id="" placeholder={t("Message")} />
-        </div>
-        <div>
-          <button className="form-button">{t("SEND")}</button>
-        </div>
+
+        <form className="form-inputs" ref={form} onSubmit={sendEmail}>
+          <input type="email" name="user_email" placeholder={t("Email")} />
+          <input name="message" placeholder={t("Message")} />
+          <input placeholder={t("Phone Number")} />
+          <input className="form-button" type="submit" value={t("SEND")} />
+        </form>
       </div>
     </div>
   );

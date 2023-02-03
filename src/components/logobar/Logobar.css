@@ -1,0 +1,15 @@
+@media (max-width: 600px) {
+  .logobar > img {
+    height: 90%;
+    width: auto;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 414px) {
+  .logobar > img {
+    height: 88%;
+    width: auto;
+    object-fit: contain;
+  }
+}
