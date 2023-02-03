@@ -48,6 +48,16 @@
   flex: 0 1 500px;
   line-height: 22px;
   font-family: "Roboto";
+  padding: 1%;
+}
+
+.info-cards:hover {
+  background-color: #2E2E2E;
+  border-radius: 8px;
+}
+
+.info-cards:hover > h3 {
+  color: #B164FE;
 }
 
 .info-cards h3 {

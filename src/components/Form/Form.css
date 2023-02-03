@@ -67,6 +67,11 @@
   cursor: pointer;
 }
 
+.form-button:hover {
+  background-color: white;
+  color: #8008fd;
+}
+
 /* ANIMATION */
 
 .background-animation {
