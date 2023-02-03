@@ -18,35 +18,35 @@ import newzealand1 from "./vectors/NewZealand1.png";
 import newzealand2 from "./vectors/NewZealand2.png";
 
 export default function Form() {
-  const form = useRef();
+  // const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_dycfhht",
-        "template_8hlqog5",
-        form.current,
-        "CPNttltCH3VdQN8BG"
-      )
-      .then(
-        (result) => {
-          if (result === "") {
-            showMessage(
-              "Callback successfully created.",
-              "success",
-              "center",
-              1000
-            );
-          } else {
-            showMessage("Title or content are empty", "error", "center", 3000);
-          }
-        },
-        (error) => {
-          console.log(error);
-        }
-      );
-  };
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+  //   emailjs
+  //     .sendForm(
+  //       "service_dycfhht",
+  //       "template_8hlqog5",
+  //       form.current,
+  //       "CPNttltCH3VdQN8BG"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         if (result === "") {
+  //           showMessage(
+  //             "Callback successfully created.",
+  //             "success",
+  //             "center",
+  //             1000
+  //           );
+  //         } else {
+  //           showMessage("Title or content are empty", "error", "center", 3000);
+  //         }
+  //       },
+  //       (error) => {
+  //         console.log(error);
+  //       }
+  //     );
+  // };
 
   const { t } = useTranslation();
   return (
@@ -91,11 +91,12 @@ export default function Form() {
           <h1>{t("Request a Call Back")}</h1>
         </div>
 
-        <form className="form-inputs" ref={form} onSubmit={sendEmail}>
+        <form className="form-inputs">
           <input type="email" name="user_email" placeholder={t("Email")} />
           <input name="message" placeholder={t("Message")} />
           <input placeholder={t("Phone Number")} />
           <input className="form-button" type="submit" value={t("SEND")} />
+          <button>dsada</button>
         </form>
       </div>
     </div>
