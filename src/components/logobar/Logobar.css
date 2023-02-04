@@ -8,7 +8,23 @@
 
 @media (max-width: 414px) {
   .logobar > img {
-    height: 88%;
+    height: 80%;
+    width: auto;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 390px) {
+  .logobar > img {
+    height: 80%;
+    width: auto;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 375px) {
+  .logobar > img {
+    height: 80%;
     width: auto;
     object-fit: contain;
   }

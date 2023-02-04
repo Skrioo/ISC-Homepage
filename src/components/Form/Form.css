@@ -221,9 +221,15 @@
 }
 
 @media (max-width: 900px) {
-  .background-animation {
-    display: none;
-  }
+  /* .background-animation {
+    display: none; */
+  /* }
+  .form-section {
+    background-image: url("./img/form-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  } */
 }
 
 @media (max-width: 600px) {
@@ -234,6 +240,10 @@
   .form-section {
     width: 100%;
     height: 46rem;
+    background-image: url("./img/form-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   .form-container {
