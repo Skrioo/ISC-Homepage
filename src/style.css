@@ -157,6 +157,24 @@ body::-webkit-scrollbar {
   }
 }
 
+@media (max-width: 600px) {
+  .mid-square-text {
+    width: 24.563rem;
+    height: 13.938rem;
+    margin-bottom: 56%;
+  }
+  .mid-square-text h3 {
+    font-size: 20px;
+  }
+
+  .mid-square-text p {
+    padding: 2%;
+  }
+
+  .words {
+    font-size: 24px;
+  }
+}
 @media (max-width: 414px) {
   .mid-square-text {
     width: 23.563rem;
@@ -201,6 +219,13 @@ body::-webkit-scrollbar {
 
   .homepage {
     height: 616px;
+  }
+}
+
+@media (max-width: 375px) {
+  .mid-square-text {
+    width: 21.563rem;
+    height: 13.938rem;
   }
 }
 
