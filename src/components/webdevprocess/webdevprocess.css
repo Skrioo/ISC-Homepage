@@ -12,18 +12,18 @@
 }
 
 .header-text {
-  padding-top: 30px;
+  padding-top: 1.875rem;
 }
 
 .header-text > h3 {
   font-weight: 600;
   font-family: "Roboto";
-  font-size: 31px;
+  font-size: 1.938rem;
   margin-bottom: 5px;
 }
 
 .header-text > p {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 26px;
 }
@@ -37,7 +37,7 @@
 }
 
 .progress-bar {
-  height: 150px;
+  height: 9.375;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,12 +45,12 @@
 }
 
 .text-bar {
-  width: 190px;
+  width: 11.875rem;
 }
 
 .hidden-div {
   visibility: hidden;
-  width: 150px;
+  width: 9.375rem;
 }
 
 .circle {
@@ -68,11 +68,11 @@
 
 .bar {
   background-color: #ddbff5;
-  width: 180px;
+  width: 11.25rem;
   height: 3px;
   position: relative;
   left: 0;
-  top: 20px;
+  top: 1.25rem;
   z-index: 1;
 }
 

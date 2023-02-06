@@ -58,7 +58,10 @@ export default function Home() {
           <Info />
         </>
 
-        <> {/* <WebDevProcess /> */}</>
+        <>
+          {" "}
+          <WebDevProcess />
+        </>
         <div className="about" ref={ref}>
           {" "}
           <About />
