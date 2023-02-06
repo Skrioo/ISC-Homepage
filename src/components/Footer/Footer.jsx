@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
 import globeicon from "../images/globe-icon.png";
 import fbicon from "../images/fb-icon.png";
@@ -9,6 +9,12 @@ import { useTranslation } from "react-i18next";
 export default function Footer({ callback }) {
   const { t } = useTranslation();
   const { i18n } = useTranslation();
+  const [subscribe, setSubscribe] = useState();
+
+  const onSubscribe = (e) => {
+    e.preventDefault();
+    setSubscribe((sub) => "");
+  };
 
   return (
     <footer>
@@ -19,12 +25,18 @@ export default function Footer({ callback }) {
           </div>
           <div className="footer-input">
             <input
+              value={subscribe}
+              required
               type="text"
-              name="sub"
+              name="subscribe"
               id="submit"
               placeholder={t("Enter your email")}
             />
-            <button type="submit" className="about-button">
+            <button
+              onClick={onSubscribe}
+              type="submit"
+              className="about-button"
+            >
               {t("SUBMIT")}
             </button>
           </div>
