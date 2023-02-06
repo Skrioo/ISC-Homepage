@@ -27,7 +27,7 @@ export default function Footer({ callback }) {
             <input
               value={subscribe}
               required
-              type="text"
+              type="email"
               name="subscribe"
               id="submit"
               placeholder={t("Enter your email")}

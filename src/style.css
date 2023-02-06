@@ -227,6 +227,9 @@ body::-webkit-scrollbar {
     width: 21.563rem;
     height: 13.938rem;
   }
+  .mid-square-text p {
+    padding: 4%;
+  }
 }
 
 @keyframes spin_words {
