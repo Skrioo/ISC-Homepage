@@ -13,12 +13,12 @@ export default function Footer({ callback }) {
 
   const onSubscribe = (e) => {
     e.preventDefault();
-    setSubscribe((sub) => "");
+    setSubscribe("");
   };
 
   return (
     <footer>
-      <div className="footer-section">
+      <form className="footer-section">
         <div className="footer-container-left">
           <div className="subscribe">
             <h2>{t("SUBSCRIBE NOW")}</h2>
@@ -31,6 +31,7 @@ export default function Footer({ callback }) {
               name="subscribe"
               id="submit"
               placeholder={t("Enter your email")}
+              onChange={(e) => setSubscribe(e.target.value)}
             />
             <button
               onClick={onSubscribe}
@@ -59,7 +60,7 @@ export default function Footer({ callback }) {
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </footer>
   );
 }
