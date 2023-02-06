@@ -18,12 +18,12 @@
 .header-text > h3 {
   font-weight: 600;
   font-family: "Roboto";
-  font-size: 1.938rem;
+  font-size: 1.4rem;
   margin-bottom: 5px;
 }
 
 .header-text > p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 26px;
 }
