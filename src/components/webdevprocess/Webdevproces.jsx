@@ -6,7 +6,7 @@ export default function WebDevProcess(style) {
   const { t } = useTranslation();
   return (
     <div className="web-dev-process">
-      <div className="header-text">
+      <div className="header-text-about">
         <h3>{t("Our Custom Web")}</h3>
         <p>{t("We meet the demands")}</p>
       </div>
