@@ -10,7 +10,7 @@ import Footer from "./Footer/Footer";
 import FooterBottom from "./FooterBottom/footerBottom";
 import GoToTop from "./GoToTop/GoToTop";
 import Info from "./Info/Info";
-
+import FAQ from "./FAQ/FAQ";
 export default function Home() {
   const { t } = useTranslation();
   const ref = useRef(null);
@@ -70,7 +70,6 @@ export default function Home() {
           <Form />
         </div>
         <>
-          {" "}
           <Footer callback={setSelectedOption} />
         </>
         <>

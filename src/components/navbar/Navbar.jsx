@@ -22,26 +22,29 @@ function Navbar({
       </div>
       {/*      <!-- NAVIGATION MENU --> */}
 
-      <ul className="nav-links">
-        {/*        <!-- USING CHECKBOX HACK --> */}
+      {/*        <!-- USING CHECKBOX HACK --> */}
 
-        {/* <input type="checkbox" id="checkbox_toggle" />
+      {/* <input type="checkbox" id="checkbox_toggle" />
 
         <label for="checkbox_toggle" className="hamburger">
           &#9776;
         </label> */}
-        {/*        <!-- NAVIGATION MENUS --> */}
-        <div className="menu">
+      {/*        <!-- NAVIGATION MENUS --> */}
+      <div className="menu">
+        <ul className="nav-links">
           <li onClick={click}>
             <h2 className="contact">{t("Contact Us")}</h2>
           </li>
-        </div>
-        <CustomDropdown
-          selectedOption={selectedOption}
-          handleOptionClick={handleOptionClick}
-          optionsContainerRef={optionsContainerRef}
-        />
-      </ul>
+          <li className="eng-de">
+            {" "}
+            <CustomDropdown
+              selectedOption={selectedOption}
+              handleOptionClick={handleOptionClick}
+              optionsContainerRef={optionsContainerRef}
+            />
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }

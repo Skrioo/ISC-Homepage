@@ -58,7 +58,7 @@ li {
 
 .contact {
   cursor: pointer;
-  margin-right: 10px;
+  margin-top: 6px;
 }
 
 .menu {
@@ -69,7 +69,6 @@ li {
   font-style: normal;
   font-size: 1rem;
   line-height: 30px;
-  margin-right: 9.438rem;
 }
 
 .menu > h2 {
@@ -82,10 +81,6 @@ li {
   border-radius: 5px;
 
   transition: 0.8s ease;
-}
-
-.menu li {
-  padding: 5px 14px;
 }
 
 /* DROPDOWN MENU */
@@ -148,101 +143,28 @@ input[type="checkbox"] {
   margin-right: 10px;
 }
 
+.eng-de {
+  margin-top: -3px;
+}
+
 /* APPLYING MEDIA QUERIES */
-
-@media (max-width: 1000px) {
+@media (max-width: 968px) {
   .logo {
-    margin-left: 3rem;
+    margin-left: 5%;
   }
-}
-
-@media (max-width: 768px) {
-  .logo {
-    font-size: 2rem;
-    margin-left: 1rem;
-  }
-
   .menu {
-    display: inline-block;
-
-    background-color: transparent;
-
-    text-align: center;
-    cursor: pointer;
-    padding: 16px 0;
-    width: 100%;
-    max-width: 768px;
-  }
-
-  .menu li:hover {
-    display: inline-block;
-  }
-
-  .menu li + li {
-    margin-top: 12px;
-  }
-
-  input[type="checkbox"]:checked ~ .menu {
-    display: block;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .dropdown {
-    left: 50%;
-
-    top: 100px;
-
-    transform: translateX(35%);
-  }
-
-  .dropdown li:hover {
-    background-color: transparent;
+    margin-right: 5%;
   }
 }
 
-@media (max-width: 672px) {
-  .logo {
-    margin-left: 2rem;
+@media (max-width: 800px) {
+  .menu {
+    margin-right: 0%;
   }
+}
 
+@media (max-width: 600px) {
   .logo > img {
-    height: 50px;
-  }
-
-  .cloud {
-    font-size: 1.25rem;
-  }
-
-  .contact {
-    font-size: 16px;
-    width: 126%;
-  }
-}
-
-@media (max-width: 428px) {
-  .logo {
-    margin-left: 2rem;
-  }
-
-  .logo > img {
-    height: 50px;
-  }
-
-  .cloud {
-    font-size: 1.25rem;
-  }
-
-  .contact {
-    font-size: 13px;
-    width: 126%;
-  }
-}
-
-@media (max-width: 375px) {
-  .nav-links {
-    margin-left: 4%;
+    height: 80%;
   }
 }

@@ -38,15 +38,18 @@ p {
 }
 
 .about-button {
-  padding: 10px;
-  padding-right: 15px;
-  margin-top: 15px;
+  margin-top: 2px;
+  padding: 5px;
+  margin-top: 10px;
   background-color: #232323;
   border: #8008fd 1px solid;
   border-radius: 30px;
 }
 
 @media (max-width: 690px) {
+  .about {
+    margin: 13% 0 13% 0;
+  }
   .about-text > p {
     font-size: 1rem;
     width: 37.5rem;
@@ -65,12 +68,20 @@ p {
   .about-text {
     margin-bottom: 38%;
   }
+
+  .about-button {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 450px) {
   .about-text > p {
     font-size: 1rem;
     width: 30.5rem;
+  }
+
+  .about {
+    margin: 20% 0 20% 0;
   }
 
   .header-text {
