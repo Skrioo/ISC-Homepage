@@ -55,7 +55,7 @@ p {
   }
   .about-us-container {
     flex-direction: column;
-    height: 400px;
+    height: 700px;
   }
   .header-text {
     border-right: none;
