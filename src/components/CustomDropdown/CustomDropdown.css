@@ -95,23 +95,29 @@
 
 @media (max-width: 428px) {
   .select-box {
-    position: relative;
-    right: 100%;
+    right: -7%;
   }
 }
 
+@media (max-width: 414px) {
+  .select-box {
+    right: -7%;
+  }
+}
+/* 
 @media (max-width: 390px) {
   .select-box {
     position: relative;
     right: 144%;
     font-size: 12px;
   }
-}
+} */
 
 @media (max-width: 375px) {
   .select-box {
     position: relative;
-    right: 157%;
+    right: -2%;
     font-size: 12px;
+    top: -10%;
   }
 }

@@ -92,6 +92,9 @@ p {
     font-size: 1.24rem;
     margin-top: 3rem;
   }
+  .about-us-container {
+    height: 350px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -108,11 +111,18 @@ p {
     font-size: 1.1rem;
     margin-top: 3rem;
   }
+
+  .about-us-container {
+    height: 350px;
+  }
 }
 
 @media (max-width: 375px) {
   .about-text > p {
     font-size: 0.8rem;
     width: 27rem;
+  }
+  .about-us-container {
+    height: 350px;
   }
 }

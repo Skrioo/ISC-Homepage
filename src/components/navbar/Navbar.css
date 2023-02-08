@@ -14,7 +14,7 @@ li {
   align-items: center;
 
   justify-content: space-between;
-  font-size: 1.25rem !important;
+  font-size: 1.25rem;
   font-family: "Montserrat";
   font-style: normal !important;
   font-weight: 400 !important;
@@ -166,5 +166,67 @@ input[type="checkbox"] {
 @media (max-width: 600px) {
   .logo > img {
     height: 80%;
+  }
+}
+
+@media (max-width: 428px) {
+  .logo > img {
+    height: 69px;
+    margin-left: 5px;
+  }
+
+  .cloud {
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    font-size: 0.8rem;
+    width: 132%;
+  }
+
+  .nav-links {
+    margin-left: 3%;
+    margin-top: -2%;
+  }
+}
+
+@media (max-width: 414px) {
+  .logo > img {
+    height: 69px;
+    margin-left: 5px;
+  }
+
+  .cloud {
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    font-size: 0.8rem;
+    width: 140%;
+  }
+
+  .nav-links {
+    margin-left: 3%;
+    margin-top: -2%;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo > img {
+    height: 69px;
+    margin-left: 5px;
+  }
+
+  .cloud {
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    font-size: 0.8rem;
+  }
+
+  .nav-links {
+    margin-left: 3%;
+    margin-top: -2%;
   }
 }
