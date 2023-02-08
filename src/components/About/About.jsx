@@ -3,7 +3,7 @@ import "./About.css";
 import { useTranslation } from "react-i18next";
 
 export default function About() {
-  const [readMore, setReadMore] = useState(true);
+  const [readMore, setReadMore] = useState(false);
   const toggleReadMore = () => {
     setReadMore(!readMore);
   };
