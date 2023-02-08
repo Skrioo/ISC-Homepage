@@ -68,7 +68,7 @@
 .select-box .option,
 .selected {
   cursor: pointer;
-  padding: 5%;
+  padding-left: 5px;
 }
 
 .select-box .option:hover {
