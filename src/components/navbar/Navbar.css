@@ -165,7 +165,43 @@ input[type="checkbox"] {
 
 @media (max-width: 600px) {
   .logo > img {
-    height: 80%;
+    height: 69px;
+    margin-left: 5px;
+  }
+
+  .cloud {
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    font-size: 0.8rem;
+    width: 132%;
+  }
+
+  .nav-links {
+    margin-left: 3%;
+    margin-top: -2%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo > img {
+    height: 69px;
+    margin-left: 5px;
+  }
+
+  .cloud {
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    font-size: 0.8rem;
+    width: 132%;
+  }
+
+  .nav-links {
+    margin-left: 3%;
+    margin-top: -2%;
   }
 }
 
