@@ -24,6 +24,7 @@ export default function Form() {
   const [number, setNumber] = useState();
   const [name, setName] = useState();
 
+  console.log(email);
   console.log(email, "dasdasdasda");
   const sendEmail = (e) => {
     e.preventDefault();
@@ -36,6 +37,7 @@ export default function Form() {
       )
       .then(
         (result) => {
+          console.log(result, "jknkj");
           setName("");
           setEmail("");
           setMessage("");
@@ -131,6 +133,7 @@ export default function Form() {
             onChange={(e) => setNumber(e.target.value)}
             type="text"
             required
+            name="user_number"
             placeholder={t("Phone Number")}
           />
           <input className="form-button" type="submit" value={t("SEND")} />
