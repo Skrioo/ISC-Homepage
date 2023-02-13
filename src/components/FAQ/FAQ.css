@@ -3,28 +3,44 @@
   margin: 0;
 }
 
-p {
+.accordion {
+  max-width: 100%;
+  margin: 2rem auto;
+  background-color: #8008fd;
+  padding: 5%;
+  font-family: "Roboto";
+}
+
+.faq-h1 {
   font-weight: 400;
 }
 
-.FAQ-container {
-  background-color: #8008fd;
-  width: auto;
-  height: 29.25rem;
-  padding: 130px;
+.accordion-title {
   display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.faq-text {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.text-row {
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  cursor: pointer;
+  background-color: #8008fd;
+}
+
+.accordion-title:hover {
+  background-color: #2e2e2e;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content {
+  background-color: #2e2e2e;
+}
+
+@media screen and (max-width: 500px) {
+  .accordion > h1 {
+    font-size: 1rem;
+  }
+  .accordion {
+    font-size: 0.8rem;
+  }
 }

@@ -42,7 +42,7 @@ export default function Form() {
           setEmail("");
           setMessage("");
           setNumber("");
-          console.log(result, "dsada");
+
           if (result) {
             showMessage(
               "Callback successfully created.",

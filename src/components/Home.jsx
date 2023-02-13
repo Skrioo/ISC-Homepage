@@ -11,6 +11,7 @@ import FooterBottom from "./FooterBottom/footerBottom";
 import GoToTop from "./GoToTop/GoToTop";
 import Info from "./Info/Info";
 import FAQ from "./FAQ/FAQ";
+import { accordionData } from "./FAQ/accordionData";
 export default function Home() {
   const { t } = useTranslation();
   const ref = useRef(null);
@@ -68,6 +69,13 @@ export default function Home() {
         </div>
         <div className="form" ref={ref}>
           <Form />
+        </div>
+        <div className="accordion">
+          <h1 className="faq-h1">FAQ on Software Development</h1>
+
+          {accordionData.map(({ title, content, id }) => (
+            <FAQ title={title} content={content} id={id} />
+          ))}
         </div>
         <>
           <Footer callback={setSelectedOption} />
