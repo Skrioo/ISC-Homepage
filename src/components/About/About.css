@@ -48,7 +48,7 @@ p {
 
 @media (max-width: 690px) {
   .about {
-    margin: 13% 0 13% 0;
+    margin: 13% 0 33% 0;
   }
   .about-text > p {
     font-size: 1rem;
@@ -76,12 +76,12 @@ p {
 
 @media (max-width: 450px) {
   .about-text > p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 30.5rem;
   }
 
   .about {
-    margin: 20% 0 20% 0;
+    margin: 20% 0 48% 0;
   }
 
   .header-text {
@@ -103,13 +103,17 @@ p {
     width: 27rem;
   }
 
+  .about {
+    margin: 20% 0 61% 0;
+  }
+
   .header-text {
     margin-top: 106%;
   }
 
   .header-text > h1 {
     font-size: 1.1rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 
   .about-us-container {
@@ -119,10 +123,14 @@ p {
 
 @media (max-width: 375px) {
   .about-text > p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     width: 27rem;
   }
   .about-us-container {
     height: 350px;
+  }
+
+  .about {
+    margin: 20% 0 61% 0;
   }
 }

@@ -67,9 +67,6 @@ export default function Home() {
           {" "}
           <About />
         </div>
-        <div className="form" ref={ref}>
-          <Form />
-        </div>
         <div className="accordion">
           <h1 className="faq-h1">FAQ on Software Development</h1>
 
@@ -77,6 +74,10 @@ export default function Home() {
             <FAQ title={title} content={content} id={id} />
           ))}
         </div>
+        <div className="form" ref={ref}>
+          <Form />
+        </div>
+
         <>
           <Footer callback={setSelectedOption} />
         </>
