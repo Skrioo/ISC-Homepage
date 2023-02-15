@@ -85,17 +85,6 @@ body::-webkit-scrollbar {
   text-align: center;
 }
 
-.logobar {
-  height: 109px;
-  background-color: #464646;
-  display: flex;
-  justify-content: center;
-}
-
-.logobar > img {
-  padding: 25px;
-}
-
 /* Homepage Words Animation */
 
 .central-div {

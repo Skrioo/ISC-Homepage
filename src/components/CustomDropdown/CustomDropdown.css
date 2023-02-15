@@ -93,6 +93,18 @@
   }
 }
 
+@media (max-width: 500px) {
+  .select-box {
+    right: 5%;
+  }
+}
+
+@media (max-width: 434px) {
+  .select-box {
+    right: 5%;
+  }
+}
+
 @media (max-width: 428px) {
   .select-box {
     right: -7%;

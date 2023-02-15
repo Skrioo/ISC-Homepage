@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import "./FAQ.css";
 
 export default function FAQ({ title, content, id }) {
