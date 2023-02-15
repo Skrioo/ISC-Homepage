@@ -52,12 +52,12 @@
 }
 
 .info-cards:hover {
-  background-color: #2E2E2E;
+  background-color: #2e2e2e;
   border-radius: 8px;
 }
 
 .info-cards:hover > h3 {
-  color: #B164FE;
+  color: #b164fe;
 }
 
 .info-cards h3 {
@@ -95,6 +95,9 @@
 }
 
 @media (max-width: 450px) {
+  .info-section {
+    padding-top: 10%;
+  }
   .info-text {
     padding: 2.5% 2.5% 0 2.5%;
     margin-bottom: 61px;
@@ -105,6 +108,10 @@
 }
 
 @media (max-width: 414px) {
+  .info-section {
+    padding-top: 10%;
+  }
+
   .info-text {
     padding: 2.5% 2.5% 0 2.5%;
     margin-bottom: 61px;
