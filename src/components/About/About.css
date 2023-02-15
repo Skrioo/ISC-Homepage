@@ -53,7 +53,7 @@ p {
   .about-text > p {
     font-size: 1rem;
     width: 37.5rem;
-    padding: 10%;
+    padding: 12%;
     margin: 1em;
   }
   .about-us-container {
@@ -124,7 +124,7 @@ p {
 @media (max-width: 375px) {
   .about-text > p {
     font-size: 0.7rem;
-    width: 27rem;
+    width: 26rem;
   }
   .about-us-container {
     height: 350px;
